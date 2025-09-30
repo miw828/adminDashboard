@@ -1,96 +1,66 @@
-<!DOCTYPE html> 
-<html lang = "en">
-    <head>
-        <title>Administrator DashBoard</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Administrator Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
-       <div class = "entire-dashboard">
-       
-        <div class = "dashboard-container">
+<body>
+    <div class="entire-dashboard">
+        <!-- Sidebar -->
+        <div class="dashboard">
             <h2> Dashboard </h2>
-            <li> Home </li>
-            <li> Profile </li>
-            <li> Messages </li>
-            <li> History </li>
-            <li> Tasks </li>
-            <li> Communities</li>
-
-            <div class = "settings-container">
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Messages</li>
+                <li>History</li>
+                <li>Tasks</li>
+                <li>Communities</li>
+            </ul>
+            <hr>
+            <ul>
                 <li>Settings</li>
-                <li></li>
+                <li>Log Out</li>
+            </ul>
+        </div>
+
+        <!-- Profile (top bar) -->
+        <div class="profile">
+            <h5>Hello!</h5>
+            <h3>Mia Ware @mware</h3>
+        </div>
+
+        <!-- Projects -->
+        <div class="project">
+            <h4>Projects</h4>
+            <div class = projectGrid>
+            
+                <div class = project1><h4>Project 1</h4>
+                <p>Blah blah blah</p>
+                </div>
+                <div class = project2><h4>Project 2</h4>
+                <p>Blah blah blah</p>
+                </div>
+                <div class = project3><h4>Project 3</h4>
+                <p>Blah blah blah </p>
+                </div>
+                <div class = project4><h4>Project 4</h4>
+                <p>Blah blah blah</p>
+                </div>
+                <div class = project5><h4>Project 5</h4>
+                <p>Blah blah blah</p>
+                </div>
+    
             </div>
-
- </div>
-  <div class = "rows">
-   <div class = "profile-container">
-                <h5> Hello!</h5>
-                <h3>Mia Ware @mware</h3>
-            </div>
- 
-           
-    <div class = "projectAannouncement">
-        <div class = "project-container">
-            <h5>Project 1 </h5>
-            <h5>Project 2</h5>
-            <h5>Project 3 </h5>
-            <h5>Project 4 </h5>
-            <h5>Project 5 </h5>
         </div>
 
-        <div class = "announcement">
-            <h5>Hello</h5>
-            <h5>Hello AGAIN</h5>
-
-
+        <!-- Announcements -->
+        <div class="announcement">
+            <h4>Announcements</h4>
+            <p>Hello</p>
+            <p>Hello AGAIN</p>
         </div>
-        </div>
-        </div>
-
-</div>
-
-
-    </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
+</body>
 </html>
