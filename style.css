@@ -1,65 +1,64 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    margin:0;
+    font-family:'Courier New', Courier, monospace; 
 }
 
-.entire-dashboard {
-    display: grid;
-    grid-template-columns: 170px ;
-    grid-template-rows: 120px auto;
-    grid-template-areas:
-        "sidebar profile profile"
-        "sidebar project announcement";
-    height: 200vh;
-    background-color: aliceblue;
+.entire-dashboard{
+    resize: auto; 
+    display: grid; 
+    grid-template: repeat(5,200px); 
+    background-color: rgb(10, 67, 116);
 }
 
-/* Sidebar */
-.dashboard {
-    grid-area: sidebar;
-    background: rgb(141, 141, 225);
-    padding: 20px;
-    border-right: 2px solid #333;
+.dashboard{
+    text-align: center;
+    border: 1px solid; 
+    grid-row-start: 1;
+    grid-row-end: 6; 
+    color:aliceblue; 
 }
-
-
-.dashboard ul {
-    list-style: none;
-    padding: 0;
+.profile{
+    padding: 5px;
+    background-color: rgb(156, 178, 197);
+    border: 1px solid; 
+    grid-column-start:2;
+    grid-column-end: 8;
 }
-
-.dashboard li {
-    margin: 10px 0;
-    cursor: pointer;
+.project{
+    background-color: rgb(148, 187, 221);
+    padding:20px;
+    border: 1px solid; 
+    grid-column-start: 2;
+    grid-column-end: 7;
+     
 }
-
-/* Profile (top bar) */
-.profile {
-    grid-area: profile;
-    background: #fff;
-    padding: 20px;
-    border-bottom: 2px solid #333;
+.projectGrid{
+    background-color: rgb(153, 160, 165);
+  display: grid;
+  padding: 20px;
+  border: 1px solid; 
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows: 200px 200px;
+  gap: 10px; 
 }
-
-/* Projects */
-.project {
-    grid-area: project;
-    background: #e7e9ff;
-    padding: 20px;
-    border-right: 2px solid #333;
-    grid-column-start: 3;
-    grid-column-end:5;
-    grid-row-start: 2;
-    grid-row-end: 4;
-}
-.project1{
+.sidebar{
+    background-color: rgb(172, 193, 212);
+    padding: 15px;
+    display: grid; 
+    gap: 70px; 
    
 }
 
-/* Announcements */
-.announcement {
-    grid-area: announcement;
-    grid-column-start: 4;
-    background: #f7f7f7;
-    padding: 20px;
+.sidebar > div{
+    border: 1px solid; 
+    padding: 10px; 
+    background-color: aliceblue;
+    border-radius: 5px;
+
+}
+.projectGrid > div {
+  border: 1px solid rgb(0, 0, 0);
+  padding: 10px; 
+  border-radius: 10px;
+  background-color: rgb(209, 223, 235);
 }
